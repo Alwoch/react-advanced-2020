@@ -1,5 +1,5 @@
 import React from "react";
-import Setup from "./tutorial/3-conditional-rendering/setup/2-short-circuit";
+import Setup from "./tutorial/4-forms/setup/2-multiple-inputs";
 import Final from "./tutorial/2-useEffect/final/2-useEffect-cleanup";
 function App() {
   return (
