@@ -1,7 +1,22 @@
-import React from 'react';
+import React, { useState } from "react";
 
 const ErrorExample = () => {
-  return <h2>useState error example</h2>;
+  const [text, setText] = useState("random Text");
+  const handleClick = () => {
+    if (text === "random Text") {
+      setText("changed text");
+    } else {
+      setText("random Text");
+    }
+  };
+  return (
+    <>
+      <h1>{text}</h1>
+      <button className="btn" onClick={handleClick}>
+        button
+      </button>
+    </>
+  );
 };
 
 export default ErrorExample;
